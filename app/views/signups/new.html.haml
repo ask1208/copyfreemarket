@@ -1,7 +1,7 @@
 .signup
   .signup-header
     =link_to root_path, class: 'signup-header__logo'do
-      = image_tag "mercari_logo_horizontal.png",  size: "185x49"
+      %img.header-img{:src => "//www-mercari-jp.akamaized.net/assets/img/common/common/logo.svg?238737266"} 
   .signup-main
     .signup-contents
       .signup-contents__title
@@ -15,6 +15,6 @@
             .fab.fa-facebook-square
             Facebookで登録する
           =link_to root_path, class: "signup-btn__google" do
-            = image_tag "g-logo.png",size: "15x15"
+            .fab.fa-google
             Googleで登録する 
   = render 'signups/signup_footer'
