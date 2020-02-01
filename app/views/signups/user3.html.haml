@@ -9,19 +9,18 @@
         %li.signup-list.active-title
           会員情報
           .list-round-left.active-round
-        %li.signup-list
+        %li.signup-list.active-title
           電話番号認証
-          .list-round
-        %li.signup-list
+          .list-round-left.active-round
+        %li.signup-list.active-title
           完了
-          .list-round-right
+          .list-round-left.active-round
     .signup-contents__title
-      会員情報入力
+      会員登録完了
     .signup-contents__form
       .signup-content_text
-        「次へ進む」のボタンを押すことにより、
-        =link_to "/" do
-          利用規約
-        %a に同意したものとみなします
+        %p　ありがとうございます。登録が完了しました。
+        .signup_mercari_start
+          =link_to root_path do
+            メルカリをはじめる
     = render 'signups/signup_footer'
-

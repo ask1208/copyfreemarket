@@ -9,19 +9,16 @@
         %li.signup-list.active-title
           会員情報
           .list-round-left.active-round
-        %li.signup-list
+        %li.signup-list.active-title
           電話番号認証
-          .list-round
+          .list-round-left.active-round
         %li.signup-list
           完了
           .list-round-right
     .signup-contents__title
-      会員情報入力
+      電話番号の確認
     .signup-contents__form
       .signup-content_text
-        「次へ進む」のボタンを押すことにより、
-        =link_to "/" do
-          利用規約
-        %a に同意したものとみなします
+        %p 本人確認のため、携帯電話のSMS(ショートメッセージサービス)を利用して認証を行います。
+        %p ※電話番号は本人確認や不正利用防止のために利用します。他のユーザーに公開されることはありません。
     = render 'signups/signup_footer'
-
