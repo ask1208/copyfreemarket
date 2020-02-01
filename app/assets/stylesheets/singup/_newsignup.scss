@@ -5,40 +5,48 @@
   text-align: center;
   line-height: 1.5;
   background-color: #fff;
+  font-weight:  bold;
 }
 
 .signup-contents__form{
   width: 700px;
   background: #FFF;
-  margin: 0 auto;
+  margin: 1px auto;
+  padding: 35px 16px 45px;
 }
 
 .signup-btn{
   max-width: 343px;
   margin: auto;
+  font-size: 14px;
 }
 .signup-btn__email{
   background: #ea352d;
   color: #fff;
   display: block;
   border-radius: 4px;
+  padding: 15px 40px;
 }
 
 .signup-btn__facebook{
-background: #385185;
-color: #fff;
-border-radius: 4px;
+  background: #385185;
+  color: #fff;
+  display: block;
+  border-radius: 4px;
+  margin: 16px 0 0;
+  padding: 15px 40px;
 }
 
 .signup-btn__google{
-  background: #FFF;
+  color: #333;
   display: block;
+  border: #979797 solid 1px;
+  margin: 16px 0 0;
   border-radius: 4px;
+  padding: 15px 40px;
 }
 
+a { text-decoration: none; }
 
-.signup-contents__form{
-  padding: 24px 16px 40px;
-  
-}
+
 
