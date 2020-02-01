@@ -1,6 +1,6 @@
 .signup
   .signup-header
-    %h1.logo
+    .logo-signup
       .signup_head-logo
         =link_to root_path do
           %img.header-img{:src => "//www-mercari-jp.akamaized.net/assets/img/common/common/logo.svg?238737266"} 
@@ -17,5 +17,11 @@
           .list-round-right
     .signup-contents__title
       会員情報入力
+    .signup-contents__form
+      .signup-content_text
+        「次へ進む」のボタンを押すことにより、
+        =link_to root_path do
+          利用規約
+        %a に同意したものとみなします
     = render 'signups/signup_footer'
 
