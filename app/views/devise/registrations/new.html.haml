@@ -10,7 +10,7 @@
         新規会員登録
       .signup-contents__form
         .signup-btn
-          =link_to root_path, class: "signup-btn__email" do
+          %a.signup-btn__email.btn-mail{:href => "/signups/user1/"}
             .far.fa-envelope
             メールアドレスで登録する
           =link_to root_path, class: "signup-btn__facebook" do

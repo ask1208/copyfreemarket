@@ -1,17 +1,26 @@
-%h2 Log in
-= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-  .field
-    = f.label :email
-    %br/
-    = f.email_field :email, autofocus: true, autocomplete: "email"
-  .field
-    = f.label :password
-    %br/
-    = f.password_field :password, autocomplete: "current-password"
-  - if devise_mapping.rememberable?
-    .field
-      = f.check_box :remember_me
-      = f.label :remember_me
-  .actions
-    = f.submit "Log in"
-= render "devise/shared/links"
+.signup
+  .signup-header
+    .logo-signup
+      .signup_head-logo
+        =link_to root_path, class: 'signup-header__logo'do
+          %img.header-img{:src => "//www-mercari-jp.akamaized.net/assets/img/common/common/logo.svg?238737266"} 
+  .signup-main
+    .login-contents
+      .login-contents__title
+        アカウントをお持ちでない方はこちら
+        =link_to root_path, class: "login-btn__email" do
+          .far.fa-envelope
+          メールアドレスで登録する
+      .login-contents__form
+        .login-btn
+          =link_to root_path, class: "login-btn__facebook" do
+            .fab.fa-facebook-square
+            Facebookで登録する
+          =link_to root_path, class: "login-btn__google" do
+            .fab.fa-google
+            Googleで登録する 
+      .login-contents__form
+        .login_mercari_start
+          = link_to "#", class: 'login__start' do
+            ログイン
+  = render 'signups/signup_footer'
