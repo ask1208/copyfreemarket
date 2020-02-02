@@ -18,6 +18,9 @@
     .signup-contents__title
       電話番号の確認
     .signup-contents__form
+      .signup_mercari_start
+        = link_to "/signups/user3/", class: 'signup__start' do
+          次へ進む
       .signup-content_text
         %p 本人確認のため、携帯電話のSMS(ショートメッセージサービス)を利用して認証を行います。
         %p ※電話番号は本人確認や不正利用防止のために利用します。他のユーザーに公開されることはありません。
