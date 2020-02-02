@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class DeviseCreateUsers < ActiveRecord::Migration[5.2]
   def change
     create_table :users do |t|
@@ -8,7 +6,11 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
       t.string :password, null: false
       t.string :first_name, null: false
       t.string :last_name, null: false
-      t.integer :birthday, null: false
+      t.string :first_name_kana, null: false
+      t.string :last_name_kana, null: false
+      t.date :birth_year, null: false
+      t.date :birth_month, null: false
+      t.date :birth_day, null: false
       t.string :comment
       t.integer :phone_number, null: false, unique: true
 
@@ -28,4 +30,3 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
     # add_index :users, :unlock_token,         unique: true
   end
 end
-
