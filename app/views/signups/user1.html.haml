@@ -19,6 +19,10 @@
       会員情報入力
     .signup-contents__form
       .signup-content_text
+      - if @user.errors.any?
+        %ul
+          - @user.errors.full_messages.each do |message|
+            %li= message
       = form_with model: @user, url: user2_signups_path, class: :form, local: true do |f|
         .form-group
           ニックネーム

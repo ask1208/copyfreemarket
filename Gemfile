@@ -75,4 +75,5 @@ gem 'devise'
 gem 'fog-aws'
 gem 'gretel'
 gem 'devise'
+gem 'rails-i18n'
 
