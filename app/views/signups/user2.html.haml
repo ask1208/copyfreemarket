@@ -8,10 +8,12 @@
       %ol.signup-lists
         %li.signup-list
           会員情報
-          .list-round-left.active-round
+          .list-round-left-through
+          .list-round-left_bar-ok
         %li.signup-list.active-title
           電話番号認証
-          .list-round-left.active-round
+          .list-round-left-through
+          .list-round-auto_bar-ok
         %li.signup-list
           完了
           .list-round-right
@@ -19,8 +21,8 @@
       電話番号の確認
     .signup-contents__form
       .signup_mercari_start
-        = link_to "/signups/user3/", class: 'signup__start' do
-          次へ進む
+        = link_to "/signups/user3/", class: 'next-button' do
+          SMSを送信する
       .signup-content_text
         %p 本人確認のため、携帯電話のSMS(ショートメッセージサービス)を利用して認証を行います。
         %p ※電話番号は本人確認や不正利用防止のために利用します。他のユーザーに公開されることはありません。
