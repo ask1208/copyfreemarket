@@ -35,6 +35,33 @@ font-size: 12px;
   right: 40px;
 }
 
+.list-round-last{
+  bottom: 5px;
+  height: 2px;
+  background: #ccc;
+  position: relative;
+  top: -7px;
+  right: 70px;
+
+  }
+
+.list-round-last__bar1{
+  width: 70px;
+  height: 2px;
+  background: #ccc;
+  position: relative;
+  bottom: 7px;
+  right: 70px;
+}
+
+.list-round-last__bar2{
+  height: 2px;
+  background: #ccc;
+  position: relative;
+  bottom: 9px;
+  right: 40px;
+}
+
 .list-round-left_bar-through{
   position: absolute;
     bottom: 5px;
@@ -62,6 +89,23 @@ font-size: 12px;
   top: -7px;
   right: 40px;
 
+}
+
+.list-round-last__bar1-ok{
+  width: 70px;
+  height: 2px;
+  background:#ea352d;
+  position: relative;
+  bottom: 6px;
+  right: 80px;
+}
+
+.list-round-last__bar2-ok{
+  height: 2px;
+  background: #ea352d;
+  position: relative;
+  bottom: 8px;
+  right: 40px;
 }
 
 .list-round{
