@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :signups, only: [:new, :create] do
     collection do
       get 'user1'
-      post 'user2'
+      get 'user2'
       get 'user3'
       get 'login'
     end
