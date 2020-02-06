@@ -1,95 +1,176 @@
 // パンくずリスト
+.signup-bar{
+  font-size: 14px;
+  padding: 40px 0 0 44px;
+  display: inline-block;
+  vertical-align: top;
 
-.signup-list{
-color: #888;
-font-size: 12px;
-}
 
-.signup-list.active-title{
-  font-weight: 600;
-  color: #ea352d;
-}
-.list-round-left-through{
-  width: 12px;
-  height: 12px;
-  margin: 8px auto 0;
-  background: #ea352d;
-  border-radius: 50%; 
-}
+  .signup-lists{
+    list-style: none;
 
-.list-round-left_bar{
-  bottom: 5px;
-  height: 2px;
-  background: #ccc;
-  position: relative;
-  top: -7px;
-  left: 30px;
-}
 
-.list-round-auto_bar{
-  bottom: 5px;
-  height: 2px;
-  background: #ccc;
-  position: relative;
-  top: -7px;
-  right: 40px;
-}
+    .signup-list{
+      float: left;
+      position: relative;
+      font-weight: 600;
+      margin-right: 40px;
+      color: #888;
+      font-size: 12px;
 
-.list-round-last{
-  bottom: 5px;
-  height: 2px;
-  background: #ccc;
-  position: relative;
-  top: -7px;
-  right: 70px;
+      .active-title{
+        font-weight: 600;
+        color: #ea352d;
+      }
+    }
 
+    .list-round{
+      width: 12px;
+      height: 12px;
+      margin: 8px auto 0;
+
+      &-left_through{
+      background: #ea352d;
+      border-radius: 50%;
+      }
+      
+      &_right{
+        background: #ccc;
+        border-radius: 50%;
+      }
+    }
+
+
+
+    .list-round_bar{
+      bottom: 5px;
+      height: 2px;
+      background: #ccc;
+      position: relative;
+      
+      &_fast{
+        top: -7px;
+        left: 30px;
+      }
+
+      &_auto{
+        top: -7px;
+        right: 40px;
+      }
+
+      &_last1{
+        top: -7px;
+        right: 70px;
+        }
+      
+      &_last2{
+        bottom: 9px;
+        right: 30px;
+        width: 50px;
+      }
+
+      &_ok1{
+        background: #ea352d;
+        position: relative;
+        top: -7px;
+        left: 30px;
+      }
+
+      &_ok2{
+        background: #ea352d;
+        position: relative;
+        top: -7px;
+        right: 42px;
+      }
+    }
   }
-
-.list-round-last__bar1{
-  width: 70px;
-  height: 2px;
-  background: #ccc;
-  position: relative;
-  bottom: 7px;
-  right: 70px;
 }
 
-.list-round-last__bar2{
-  height: 2px;
-  background: #ccc;
-  position: relative;
-  bottom: 9px;
-  right: 40px;
-}
 
-.list-round-left_bar-through{
-  position: absolute;
-    bottom: 5px;
-    z-index: -1;
-    display: block;
-    content: '';
-    width: 100%;
-    height: 2px;
-}
 
-.list-round-left_bar-ok{
-  bottom: 5px;
-  height: 2px;
-  background: #ea352d;
-  position: relative;
-  top: -7px;
-  left: 30px;
-}
 
-.list-round-auto_bar-ok{
-  bottom: 5px;
-  height: 2px;
-  background: #ea352d;
-  position: relative;
-  top: -7px;
-  right: 40px;
+// .signup-list.active-title{
+//   font-weight: 600;
+//   color: #ea352d;
+// }
+// .list-round-left-through{
+//   width: 12px;
+//   height: 12px;
+//   margin: 8px auto 0;
+//   background: #ea352d;
+//   border-radius: 50%; 
+// }
 
-}
+// .list-round-left_bar{
+
+//   top: -7px;
+//   left: 30px;
+// }
+
+// .list-round-auto_bar{
+//   bottom: 5px;
+//   height: 2px;
+//   background: #ccc;
+//   position: relative;
+//   top: -7px;
+//   right: 40px;
+// }
+
+// .list-round-last{
+//   bottom: 5px;
+//   height: 2px;
+//   background: #ccc;
+//   position: relative;
+//   top: -7px;
+//   right: 70px;
+
+//   }
+
+// .list-round-last__bar1{
+//   width: 70px;
+//   height: 2px;
+//   background: #ccc;
+//   position: relative;
+//   bottom: 7px;
+//   right: 70px;
+// }
+
+// .list-round-last__bar2{
+//   height: 2px;
+//   background: #ccc;
+//   position: relative;
+//   bottom: 9px;
+//   right: 40px;
+// }
+
+// .list-round-left_bar-through{
+//   position: absolute;
+//     bottom: 5px;
+//     z-index: -1;
+//     display: block;
+//     content: '';
+//     width: 100%;
+//     height: 2px;
+// }
+
+// .list-round-left_bar-ok{
+//   bottom: 5px;
+//   height: 2px;
+//   background: #ea352d;
+//   position: relative;
+//   top: -7px;
+//   left: 30px;
+// }
+
+// .list-round-auto_bar-ok{
+//   bottom: 5px;
+//   height: 2px;
+//   background: #ea352d;
+//   position: relative;
+//   top: -7px;
+//   right: 40px;
+
+// }
 
 .list-round-last__bar1-ok{
   width: 70px;

@@ -1,24 +1,25 @@
 .signup
   .signup-header
     .logo-signup
-      .signup_head-logo
+      .logo-signup_logo
         =link_to root_path do
-          %img.header-img{:src => "//www-mercari-jp.akamaized.net/assets/img/common/common/logo.svg?238737266"} 
+          %img.signup-img{:src => "//www-mercari-jp.akamaized.net/assets/img/common/common/logo.svg?238737266"} 
     .signup-bar
       %ol.signup-lists
         %li.signup-list.active-title
           会員情報
-          .list-round-left-through
-          .list-round-left_bar
+          .list-round.list-round-left_through
+          .list-round_bar.list-round_bar_fast
         %li.signup-list
           電話番号認証
           .list-round-right
-          .list-round-auto_bar
+          .list-round_bar.list-round_bar_auto
         %li.signup-list
           完了
           .list-round-right
-          .list-round-last__bar1
-          .list-round-last__bar2
+          .list-round_bar.list-round_bar_last1
+          .list-round_bar.list-round_bar_last2
+  
     .signup-contents__title
       会員情報入力
     .signup-contents__form
@@ -47,8 +48,8 @@
           %div
             %label.form-label お名前(全角)
             %span.essential 必須
-            = f.text_field :first_name, placeholder: '例)山田', class:'input-box'
-            = f.text_field :last_name, placeholder: '例)彩', class:'input-box'
+            = f.text_field :first_name, placeholder: '例)山田', class:'label'
+            = f.text_field :last_name, placeholder: '例)彩', class:'label'
         .form-group
           %div
             %label.form-label お名前(カタカナ)
