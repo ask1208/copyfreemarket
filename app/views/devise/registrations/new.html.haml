@@ -5,18 +5,17 @@
         =link_to root_path, class: 'signup-header__logo'do
           %img.header-img{:src => "//www-mercari-jp.akamaized.net/assets/img/common/common/logo.svg?238737266"} 
   .signup-main
-    %h2.signup-contents
-      .signup-contents__title
-        新規会員登録
-      .signup-contents__form
-        .signup-btn
-          %a.signup-btn__email.btn-mail{:href => "/signups/user1/"}
-            .far.fa-envelope
-            メールアドレスで登録する
-          =link_to root_path, class: "signup-btn__facebook" do
-            .fab.fa-facebook-square
-            Facebookで登録する
-          =link_to root_path, class: "signup-btn__google" do
-            .fab.fa-google
-            Googleで登録する 
+    .signup-contents
+      新規会員登録
+    .signup-contents__form
+      .signup-btn
+        %a.signup-btn__email.btn-mail{:href => "/signups/user1/"}
+          .far.fa-envelope
+          メールアドレスで登録する
+        =link_to root_path, class: "signup-btn__facebook" do
+          .fab.fa-facebook-square
+          Facebookで登録する
+        =link_to root_path, class: "signup-btn__google" do
+          .fab.fa-google
+          Googleで登録する 
   = render 'signups/signup_footer'
