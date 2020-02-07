@@ -12,11 +12,11 @@
           .list-round_bar.list-round_bar_fast
         %li.signup-list
           電話番号認証
-          .list-round-right
+          .list-round.list-round-right
           .list-round_bar.list-round_bar_auto
         %li.signup-list
           完了
-          .list-round-right
+          .list-round.list-round-right
           .list-round_bar.list-round_bar_last1
           .list-round_bar.list-round_bar_last2
   
@@ -74,7 +74,6 @@
         =link_to root_path do
           利用規約
         %a に同意したものとみなします
-        
         .form-group
           = f.submit "次へ進む", class: 'next-button'
     = render 'signups/signup_footer'
