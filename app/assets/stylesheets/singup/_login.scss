@@ -1,4 +1,9 @@
-.login-contents__title{
+.signup-main{
+
+  .login-contents{
+    display: block;
+  
+  &__title{
   font-size: 14px;
   padding: 32px;
   text-align: center;
@@ -8,6 +13,7 @@
   max-width: 343px;
   margin: auto;
 }
+  }
 
 .login-contents__form{
   background: #FFF;
@@ -60,3 +66,4 @@
   width: 328px;
   font-size: 14px;
  }
+}
