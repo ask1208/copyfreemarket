@@ -20,7 +20,7 @@
           .list-round_bar.list-round_bar_last1
           .list-round_bar.list-round_bar_last2
   
-    .signup-contents__title
+    .signup-contents.signup-contents__title
       会員情報入力
     .signup-contents__form
       .signup-content_text
@@ -32,14 +32,17 @@
         .form-group
           ニックネーム
           %span.essential 必須
+        .form-group
           = f.text_field :nickname, placeholder: '例) メルカリ太郎', class:'input-box'
         .form-group
           メールアドレス
           %span.essential 必須
+        .form-group
           = f.text_field :email, placeholder: 'PC・携帯どちらでも可', class:'input-box'
         .form-group
           パスワード
           %span.essential 必須
+        .form-group
           = f.text_field :password, placeholder: '7文字以上の半角英数字', class:'input-box'
           %p ※ 英字と数字の両方を含めて設定してください
         %h3 本人確認
@@ -48,14 +51,16 @@
           %div
             %label.form-label お名前(全角)
             %span.essential 必須
-            = f.text_field :first_name, placeholder: '例)山田', class:'label'
-            = f.text_field :last_name, placeholder: '例)彩', class:'label'
+        .form-group
+          = f.text_field :first_name, placeholder: '例)山田', class:'label'
+          = f.text_field :last_name, placeholder: '例)彩', class:'label'
         .form-group
           %div
             %label.form-label お名前(カタカナ)
             %span.essential 必須
-            = f.text_field :first_name_kana, placeholder: '例)ヤマダ', class:'input-box'
-            = f.text_field :last_name_kana, placeholder: '例)アヤ', class:'input-box'
+        .form-group
+          = f.text_field :first_name_kana, placeholder: '例)ヤマダ', class:'input-box'
+          = f.text_field :last_name_kana, placeholder: '例)アヤ', class:'input-box'
         .form-group
           %label.form-label 生年月日
           %span.essential 必須

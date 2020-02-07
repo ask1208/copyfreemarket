@@ -19,15 +19,21 @@
           .list-round.list-round-right
           .list-round_bar.list-round_bar_last1
           .list-round_bar.list-round_bar_last2
-    .signup-contents__title
+    .signup-contents.signup-contents__title
       電話番号の確認
     .signup-contents__form
-      .signup_mercari_start
-        = form_with model: @user, url: user3_signups_path,  local: true do |f|
+      = form_with model: @user, url: user3_signups_path,  local: true do |f|
+        .form-group
+          携帯電話番号
+        .form-group
+          = f.text_field :phone_number, placeholder: '電話番号の入力', class:'input-box'
+        .signup-content_text
+          %p 本人確認のため、携帯電話のSMS(ショートメッセージ
+          %p サービス)を利用して認証を行います。
+        .signup_mercari_start
           .form-group
           = f.submit "SMSを送信する", class: 'next-button'
-          
       .signup-content_text
-        %p 本人確認のため、携帯電話のSMS(ショートメッセージサービス)を利用して認証を行います。
-        %p ※電話番号は本人確認や不正利用防止のために利用します。他のユーザーに公開されることはありません。
+        %p ※電話番号は本人確認や不正利用防止のために利用し
+        %p ます。他のユーザーに公開されることはありません。
     = render 'signups/signup_footer'
