@@ -14,18 +14,29 @@
   position: relative;
   top: 30px;
   }
+
+  &__form{
+    width: 700px;
+    height: auto;
+    background: #FFF;
+    margin: 1px auto;
+    padding: 35px 16px 45px;
+    position: relative;
+    top: 30px;
+  }
  
 }
 
-.signup-contents__form{
-  width: 700px;
-  height: auto;
-  background: #FFF;
-  margin: 1px auto;
-  padding: 35px 16px 45px;
-  position: relative;
-  top: 30px;
-}
+// .signup-contents__form{
+//   width: 700px;
+//   height: auto;
+//   background: #FFF;
+//   margin: 1px auto;
+//   padding: 35px 16px 45px;
+//   position: relative;
+//   top: 30px;
+
+// }
 
 .signup-btn{
   max-width: 343px;
