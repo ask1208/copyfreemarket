@@ -77,3 +77,5 @@ gem 'gretel'
 gem 'devise'
 gem 'rails-i18n'
 
+gem 'payjp'
+
