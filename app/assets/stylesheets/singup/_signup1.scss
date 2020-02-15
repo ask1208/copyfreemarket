@@ -1,31 +1,62 @@
+.signup-main{
+  margin: 0;
+  padding: 0;
 
+  .signup-contents{
+    font-size: 22px;
+    padding: 32px;
+    text-align: center;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #333;
+    font-weight:  bold;
+    width: 700px;
+    margin: 0 auto;
 
+    &__form{
+      width: 700px;
+      height: auto;
+      background: #FFF;
+      margin: 1px auto;
+      padding: 24px 16px 40px;
 
+      .signup-btn{
+        max-width: 343px;
+        margin: auto;
+        font-size: 14px;
+      
+        &__email{
+          @include login-btn-new;
+          background: #ea352d;
 
+          .fa-lg{
+            position: relative;
+            right: 50px;
+          }
+        }
 
+        &__facebook{
+          @include login-btn-new;
+          background: #385185;
+        
+          .fa-2x{
+            position: relative;
+            right: 70px;
+          }
+        }
 
+        &__google{
+          @include login-btn-new;
+          color: #333;
+          border: #979797 solid 1px;
 
-
-
-
-
-
-
-.form-group {
-  width: 50%;
-  max-width: 343px;
-  margin: 20px auto 0;
-}
-.form-label {
-  font-weight: bold;
-}
-.essential {
-  background: #ea352d;
-  margin: 0 0 0 8px;
-  padding: 2px 4px;
-  border-radius: 2px;
-  color: #fff;
-  font-size: 12px;
-  vertical-align: top;
+          .fa-1x{
+            position: relative;
+            right: 80px;
+          }
+        }
+      }
+    }
+  }
 }
 

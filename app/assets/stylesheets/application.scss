@@ -1,9 +1,11 @@
 @import "reset";
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+@import "mixin/mixin";
+
 @import"singup/newsignup";
 @import "singup/usersignup";
 @import "singup/signupheader";
 @import "singup/signupfooter";
 @import "singup/signup1";
 @import "singup/login";
-@import 'font-awesome-sprockets';
-@import 'font-awesome';

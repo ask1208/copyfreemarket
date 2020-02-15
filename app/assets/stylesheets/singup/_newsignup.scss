@@ -1,91 +1,82 @@
+.login-contents{
+  display: block;
+  max-width: 456px;
+  margin: auto;
 
-.signup-contents{
-  font-size: 22px;
+  &__title{
+  font-size: 14px;
   padding: 32px;
   text-align: center;
   line-height: 1.5;
   background-color: #fff;
-  color: #333;
-  font-weight:  bold;
-  width: 668px;
-  margin: 0 auto;
+  padding: 30px 64px;
 
-  &__title{
-  position: relative;
-  top: 30px;
+    .login-btn{
+      &__email{
+      display: block;
+      margin: 8px 0 0;
+      border: 1px solid #0099e8;
+      background: #0099e8;
+      line-height: 40px;
+      color: #fff;
+      }
+    } 
   }
 
   &__form{
-    width: 700px;
-    height: auto;
     background: #FFF;
     margin: 1px auto;
-    padding: 35px 16px 45px;
-    position: relative;
-    top: 30px;
-  }
- 
+    padding: 20px 20px;
+    
+    .login-btn{
+      @include login-btn;
+
+      &__facebook{
+        @include login-btn-fa;
+        background: #385185;
+
+        .fa-2x{
+          position: relative;
+          right: 60px;
+        }
+      }
+
+      &__google{
+        @include login-btn-fa;
+        color: #333;
+        border: #979797 solid 1px;
+        background-color: #FFF;
+        
+        .fa-lg{
+          position: relative;
+          right: 70px;
+        }
+      }
+
+      &_start{
+        background: #ea352d;
+        border: 1px solid #ea352d;
+        color: #fff;
+        padding: 10px;
+        width: 328px;
+        }
+    }
+
+      .g-recaptcha{
+        position: relative;
+        left: 20px;
+        margin: 20px;
+      }
+      .login-a{
+        color: #0099e8;
+        display: block;
+        margin: 40px 0 0;
+        position: relative;
+        right: 80px;
+      }
+    
+  } 
 }
-
-// .signup-contents__form{
-//   width: 700px;
-//   height: auto;
-//   background: #FFF;
-//   margin: 1px auto;
-//   padding: 35px 16px 45px;
-//   position: relative;
-//   top: 30px;
-
-// }
-
-.signup-btn{
-  max-width: 343px;
-  margin: auto;
-  font-size: 14px;
-}
-.signup-btn__email{
-  background: #ea352d;
-  color: #fff;
-  display: block;
-  border-radius: 4px;
-  padding: 15px 40px;
-}
-
-.btn__email{
-  display: block;
-  margin: 8px 0 0;
-  border: 1px solid #0099e8;
-  background: #0099e8;
-  color: #fff;
-  line-height: 40px;
-
-}
-
-.signup-btn__facebook{
-  background: #385185;
-  color: #fff;
-  display: block;
-  border-radius: 4px;
-  margin: 16px 0 0;
-  padding: 15px 40px;
-}
-
-.signup-btn__google{
-  color: #333;
-  display: block;
-  border: #979797 solid 1px;
-  margin: 16px 0 0;
-  border-radius: 4px;
-  padding: 15px 40px;
-}
-
-.signup__start{
-  color: #FFF;
-}
-a { 
-  text-decoration: none;
- }
-
 
 
 
