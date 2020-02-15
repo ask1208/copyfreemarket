@@ -3,7 +3,7 @@
     .logo-signup
       .logo-signup_logo
         =link_to root_path do
-          %img.signup-img{:src => "//www-mercari-jp.akamaized.net/assets/img/common/common/logo.svg?238737266"} 
+          = image_tag('fmarket_logo_red.svg', class:  "signup-header-img")   
     .signup-bar
       = render "devise/shared/error_messages", resource: resource
       %ol.signup-lists
@@ -24,11 +24,11 @@
       会員情報入力
     .signup-contents__form
       .signup-content_text
-      = form_with model: @user, url: new_user_session_path,  local: true do |f|
-        -# - if @user.errors.any?
-        -#   %ul
-        -#     - @user.errors.full_messages.each do |message|
-        -#       %li= message
+      = form_with model: @user, url: user2_signups_path,  local: true do |f|
+        - if @user.errors.any?
+          %ul
+            - @user.errors.full_messages.each do |message|
+              %li= message
         .signup-content_text
         .form-group
           ニックネーム
