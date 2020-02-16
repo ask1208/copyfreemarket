@@ -1,39 +1,57 @@
-%script{:src => "https://www.google.com/recaptcha/api.js"}
-%script{:src => "https://code.jquery.com/jquery-2.1.4.min.js", :type => "text/javascript"}
-.signup
-  .signup-header
-    .logo-signup
-      .signup_head-logo
-        =link_to root_path, class: 'signup-header__logo'do
-          = image_tag('fmarket_logo_red.svg', class:  "signup-header-img")
-  .signup-main
-    .login-contents
-      .login-contents__title
-        アカウントをお持ちでない方はこちら
-        =link_to root_path, class: "btn__email" do
-          新規会員登録
-      .login-contents__form
-        .login-btn
-          =link_to root_path, class: "login-btn__facebook" do
-            .fab.fa-facebook-square
-            Facebookで登録する
-          =link_to root_path, class: "login-btn__google" do
-            .fab.fa-google
-            Googleで登録する 
-      .login-contents__form
-        .g-recaptcha{"data-callback" => "clearcall", "data-sitekey" => "6Lcer9UUAAAAAODTBE72Vg1asRfEfDuAfV14Uzqx"}
-        -# .g-recaptcha{"data-sitekey" => "your_site_key"}
-        -# :javascript
-        -#   function clearcall(code) {
-        -#     if(code !== ""){
-        -#       $(':submit[name=button]').removeAttr("disabled");
-        -#     }
-        -#   }
+%h2 Log in
+= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+  .field
+    = f.label :email
+    %br/
+    = f.email_field :email, autofocus: true, autocomplete: "email"
+  .field
+    = f.label :password
+    %br/
+    = f.password_field :password, autocomplete: "current-password"
+  - if devise_mapping.rememberable?
+    .field
+      = f.check_box :remember_me
+      = f.label :remember_me
+  .actions
+    = f.submit "Log in"
+= render "devise/shared/links"
 
-        .login_mercari_start
-          = link_to "#", class: 'login__start' do
-            ログイン
-  = render 'signups/signup_footer'
+-# %script{:src => "https://www.google.com/recaptcha/api.js"}
+-# %script{:src => "https://code.jquery.com/jquery-2.1.4.min.js", :type => "text/javascript"}
+-# .signup
+-#   .signup-header
+-#     .logo-signup
+-#       .signup_head-logo
+-#         =link_to root_path, class: 'signup-header__logo'do
+-#           = image_tag('fmarket_logo_red.svg', class:  "signup-header-img")
+-#   .signup-main
+-#     .login-contents
+-#       .login-contents__title
+-#         アカウントをお持ちでない方はこちら
+-#         =link_to root_path, class: "btn__email" do
+-#           新規会員登録
+-#       .login-contents__form
+-#         .login-btn
+-#           =link_to root_path, class: "login-btn__facebook" do
+-#             .fab.fa-facebook-square
+-#             Facebookで登録する
+-#           =link_to root_path, class: "login-btn__google" do
+-#             .fab.fa-google
+-#             Googleで登録する 
+-#       .login-contents__form
+-#         .g-recaptcha{"data-callback" => "clearcall", "data-sitekey" => "6Lcer9UUAAAAAODTBE72Vg1asRfEfDuAfV14Uzqx"}
+-#         -# .g-recaptcha{"data-sitekey" => "your_site_key"}
+-#         -# :javascript
+-#         -#   function clearcall(code) {
+-#         -#     if(code !== ""){
+-#         -#       $(':submit[name=button]').removeAttr("disabled");
+-#         -#     }
+-#         -#   }
+
+-#         .login_mercari_start
+-#           = link_to "#", class: 'login__start' do
+-#             ログイン
+-#   = render 'signups/signup_footer'
 
 
 
